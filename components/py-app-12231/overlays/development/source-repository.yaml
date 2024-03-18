@@ -1,0 +1,14 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: py-app-12231-repository
+spec:
+  url: https://github.com/stephanie-cy/py-app-12231
+  secret:
+      name: "gitops-auth-secret"
+      # Set this if you have a different key in your secret
+      key: "password"
+  webhook_secret:
+      name: "rhtap-pipeline-secret"
+      # Set this if you have a different key in your secret
+      key: "webhook-github-secret"

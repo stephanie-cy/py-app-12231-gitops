@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: py-app-12231-gitops-repository
+spec:
+  url: https://github.com/stephanie-cy/py-app-12231-gitops
